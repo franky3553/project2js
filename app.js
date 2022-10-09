@@ -5,12 +5,14 @@ const allDecisions = document.querySelectorAll('button')
 
 let userDecision
 let pcDecision
+let output
 
 allDecisions.forEach(decision => decision.addEventListener('click', (e) => {
 	userDecision = e.target.id
 	userDecisionAppears.innerHTML = userDecision
 
    makePcDecision()
+   getOutput()
 
 }))
 
@@ -31,4 +33,37 @@ function makePcDecision() {
 	}
 	
 	pcDecisionAppears.innerHTML = pcDecision
+}
+
+
+function getOutput() {
+	if (userDecision === pcDecision) {
+		output = 'Draw'
+	}
+
+	if (userDecision === 'rock' && pcDecision === 'paper') {
+		output = 'pc Wins'
+	}
+
+	if (userDecision === 'rock' && pcDecision === 'scissors') {
+		output = 'you Wins'
+	}
+
+	if (userDecision ==='paper' && pcDecision === 'rock') {
+		output = 'you Win'
+	}
+
+	if (userDecision ==='paper' && pcDecision === 'scissors') {
+		output = 'pc Wins'
+	}
+
+	if (userDecision ==='scissors' && pcDecision === 'rock') {
+		output = 'pc Wins'
+	}
+
+	if (userDecision ==='scissors' && pcDecision === 'paper') {
+		output = 'you Win'
+	}
+
+	outputAppears.innerHTML = output
 }

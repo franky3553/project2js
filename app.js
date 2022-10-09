@@ -42,7 +42,7 @@ function getOutput() {
 	}
 
 	if (userDecision === 'rock' && pcDecision === 'paper') {
-		output = 'pc WiINs'
+		output = 'pc WINs'
 	}
 
 	if (userDecision === 'rock' && pcDecision === 'scissors') {

@@ -29,3 +29,11 @@ In the future we will need more games to have fun!
 
 -   Create more minigames in same web
 
+### 💡Validators
+
+- html PASS
+- css PASS
+		
+### 👋End Note
+
+It has been a pleasure developing this project!

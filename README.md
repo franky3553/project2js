@@ -9,6 +9,9 @@
  <p align="center">
     Simple Nice Game!
  </p>
+ <p align="center">
+ Play it!! https://franky3553.github.io/project2js/
+ </p>
 
 <hr />
 

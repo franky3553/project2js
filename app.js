@@ -38,31 +38,31 @@ function makePcDecision() {
 
 function getOutput() {
 	if (userDecision === pcDecision) {
-		output = 'Draw'
+		output = 'DRAW'
 	}
 
 	if (userDecision === 'rock' && pcDecision === 'paper') {
-		output = 'pc Wins'
+		output = 'pc WiINs'
 	}
 
 	if (userDecision === 'rock' && pcDecision === 'scissors') {
-		output = 'you Wins'
+		output = 'you WIN'
 	}
 
 	if (userDecision ==='paper' && pcDecision === 'rock') {
-		output = 'you Win'
+		output = 'you WIN'
 	}
 
 	if (userDecision ==='paper' && pcDecision === 'scissors') {
-		output = 'pc Wins'
+		output = 'pc WINs'
 	}
 
 	if (userDecision ==='scissors' && pcDecision === 'rock') {
-		output = 'pc Wins'
+		output = 'pc WINs'
 	}
 
 	if (userDecision ==='scissors' && pcDecision === 'paper') {
-		output = 'you Win'
+		output = 'you WIN'
 	}
 
 	outputAppears.innerHTML = output

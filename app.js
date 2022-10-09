@@ -1,11 +1,17 @@
+// Basic const section
+
 const pcDecisionAppears = document.getElementById('pc-decision')
 const userDecisionAppears = document.getElementById('user-decision')
 const outputAppears = document.getElementById('output')
 const allDecisions = document.querySelectorAll('button')
 
+// Variables section
+
 let userDecision
 let pcDecision
 let output
+
+// Main Function (allDecisions)
 
 allDecisions.forEach(decision => decision.addEventListener('click', (e) => {
 	userDecision = e.target.id
@@ -16,6 +22,7 @@ allDecisions.forEach(decision => decision.addEventListener('click', (e) => {
 
 }))
 
+// PC decision function
 
 function makePcDecision() {
 	const randomNumber = Math.floor(Math.random() * 3) + 1	
@@ -35,6 +42,7 @@ function makePcDecision() {
 	pcDecisionAppears.innerHTML = pcDecision
 }
 
+// Combination gestor function
 
 function getOutput() {
 	if (userDecision === pcDecision) {

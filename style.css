@@ -1,0 +1,11 @@
+/* - - - - - - Default Values - - - - - - */
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'console', sans-serif;
+   font-weight: bold;
+}
+
+p{ font-size: 1em;}
+p{ margin-top: 9px;}

@@ -11,3 +11,9 @@
  </p>
 
 <hr />
+
+### 🧐About
+
+Rock Paper Scissors has been created to have a good time in boring times!
+
+
